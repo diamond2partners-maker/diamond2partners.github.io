@@ -117,7 +117,7 @@
 <h2>📬 Contact</h2>
 
 <p>For collaborations, partnerships, or early access:</p>
-<p><strong>diamond2partners@gmail.com</strong></p>
+<p><strong>partners@diamond2partnerscom</strong></p>
 
 <hr/>
 
