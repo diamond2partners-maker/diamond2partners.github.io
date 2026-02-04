@@ -1,49 +1,77 @@
-💎 Diamond2Partners
+<div align="center">
 
-Luxury Affiliate Access Platform
+# 💎 Diamond2Partners  
+### Luxury Affiliate Access Platform (D2P LAAP)
 
-Official landing page repository for the Diamond2Partners project.
+**Curated access to high-end affiliate opportunities & luxury niche traffic systems.**  
+Minimal landing page hosted on **GitHub Pages** while the platform is under development.
 
-This site is hosted via GitHub Pages and serves as a minimalist pre-launch page while the full platform is under development.
+<br/>
 
-🚀 About the Project
+<!-- Badges -->
+![Status](https://img.shields.io/badge/status-in%20development-yellow)
+![Built%20with](https://img.shields.io/badge/built%20with-HTML%20%2B%20CSS-blue)
+![Hosting](https://img.shields.io/badge/hosting-GitHub%20Pages-black)
 
-Diamond2Partners is being built as a curated ecosystem focused on:
+<br/>
 
-High-end affiliate opportunities
+**Live:** https://diamond2partners.com
 
-Premium digital niches
+</div>
 
-Traffic systems & funnels
+---
 
-Clean, conversion-focused web structures
+## ✨ What is Diamond2Partners?
 
-The goal is to connect digital entrepreneurs with quality affiliate access, not mass-market noise.
+Diamond2Partners is being built as a **curated luxury affiliate hub** — not a store and not a marketplace.
 
-🖥 Tech Stack
+We focus on:
+- **Luxury watch & high-end goods affiliate access**
+- **Curated guides and selections**
+- **Traffic systems** (Pinterest-first)
+- Clean, fast, conversion-focused web structure
 
-HTML5
+---
 
-CSS3
+## 🧩 Project Positioning
 
-GitHub Pages (static hosting)
+✅ **Curated Luxury Hub** (guides + selections)  
+❌ Not a store  
+❌ Not a marketplace
 
-No frameworks. No bloat. Fast loading.
+**Positioning tagline:**  
+> *Curated access to high-end watches & luxury goods.*
 
-🌐 Live Site
+---
 
-👉 https://diamond2partners.com
+## 🚀 Current Stage
 
-📌 Status
+This repository powers a **pre-launch landing page**.
 
-Project in development.
-Platform launch in progress.
+### Roadmap (high-level)
+- [x] Domain setup & DNS
+- [x] GitHub Pages deployment
+- [ ] Premium landing design (brand look)
+- [ ] Core site structure (categories + guides)
+- [ ] Pinterest traffic system
+- [ ] First affiliate partnerships & tracking
 
-📬 Contact
+---
 
-For collaborations or early access inquiries:
-diamond2partners@gmail.com
+## 🛠 Tech Stack
 
-© Diamond2Partners
+- **HTML5**
+- **CSS3**
+- **GitHub Pages** (static hosting)
 
-All rights reserved.
+> No frameworks. No bloat. Fast loading.
+
+---
+
+## 📦 Repository Structure
+
+```txt
+/
+├─ index.html
+├─ assets/        (optional: logo, icons, images)
+└─ README.md
