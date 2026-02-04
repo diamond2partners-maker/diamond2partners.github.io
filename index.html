@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diamond2Partners — Luxury Affiliate Access Platform</title>
+  <meta
+    name="description"
+    content="Diamond2Partners (D2P LAAP) is a curated luxury affiliate access platform for high-end watches and premium goods."
+  />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #0c0f14;
+      --surface: #141823;
+      --surface-light: #1b2230;
+      --text: #f7f7f8;
+      --muted: #c5c8d3;
+      --accent: #d8b36d;
+      --accent-strong: #f2d28d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #1a1f2c 0%, #0c0f14 40%, #090c10 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      padding: 32px 8vw 80px;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      gap: 40px;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(216, 179, 109, 0.12);
+      color: var(--accent-strong);
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 4vw, 52px);
+      margin: 20px 0 16px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 540px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .button {
+      padding: 12px 22px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      background: var(--accent);
+      color: #1a1a1a;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border-color: rgba(216, 179, 109, 0.5);
+      color: var(--accent-strong);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(216, 179, 109, 0.2);
+    }
+
+    .hero-card {
+      background: linear-gradient(145deg, #1a2030, #11151d);
+      border-radius: 24px;
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo-mark {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #f2d28d 0%, #b07a2d 100%);
+      display: grid;
+      place-items: center;
+      color: #1b1b1b;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .logo h2 {
+      font-size: 26px;
+    }
+
+    .info-grid {
+      display: grid;
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: rgba(216, 179, 109, 0.15);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .icon svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--accent-strong);
+    }
+
+    main {
+      padding: 0 8vw 90px;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 0 auto 60px;
+    }
+
+    .section h3 {
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+
+    .section p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .pill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .pill {
+      padding: 18px;
+      border-radius: 16px;
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+
+    .timeline-item {
+      padding: 18px;
+      border-radius: 14px;
+      background: var(--surface-light);
+      border-left: 3px solid var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 8vw 60px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 720px) {
+      header {
+        padding: 24px 6vw 60px;
+      }
+
+      main {
+        padding: 0 6vw 60px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div>
+        <span class="badge">Luxury Affiliate Access</span>
+        <h1>Diamond2Partners (D2P LAAP)</h1>
+        <p>
+          Curated access to high-end watch and luxury goods affiliate opportunities, built for
+          entrepreneurs who value precision, clean design, and premium positioning.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="mailto:partners@diamond2partnerscom">Request access</a>
+          <a class="button secondary" href="#about">Explore the vision</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="logo">
+          <div class="logo-mark">◆</div>
+          <div>
+            <h2>Diamond2Partners</h2>
+            <p>Luxury Affiliate Access Platform</p>
+          </div>
+        </div>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2 3 8.5l9 13.5 9-13.5L12 2zm0 4.3 4.9 2.7-4.9 7.1-4.9-7.1L12 6.3z" />
+              </svg>
+            </div>
+            <div>
+              <strong>Curated luxury hub</strong>
+              <p>Not a marketplace — curated selections and access only.</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 2h10a2 2 0 0 1 2 2v16l-7-4-7 4V4a2 2 0 0 1 2-2z" />
+              </svg>
+            </div>
+            <div>
+              <strong>Guides + selections</strong>
+              <p>Luxury watch and high-end goods affiliate recommendations.</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 12h6V4H4v8zm0 8h6v-6H4v6zm10 0h6V12h-6v8zm0-18v6h6V2h-6z" />
+              </svg>
+            </div>
+            <div>
+              <strong>Traffic systems</strong>
+              <p>Pinterest-first growth with conversion-focused structure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h3>Project overview</h3>
+      <p>
+        Diamond2Partners is being built as a premium access platform for entrepreneurs looking
+        to connect with high-end affiliate ecosystems. We focus on clean, fast, conversion-first
+        experiences with luxury branding at the core.
+      </p>
+      <div class="pill-grid">
+        <div class="pill">
+          <strong>Positioning</strong>
+          <p>Curated access to high-end watches &amp; luxury goods.</p>
+        </div>
+        <div class="pill">
+          <strong>What we are</strong>
+          <p>Guides, selections, and partner access.</p>
+        </div>
+        <div class="pill">
+          <strong>What we are not</strong>
+          <p>Not a store. Not a marketplace. No mass-market noise.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Current stage</h3>
+      <p>This is a pre-launch landing page while the platform experience is in development.</p>
+      <div class="timeline">
+        <div class="timeline-item">Domain setup &amp; GitHub Pages deployment complete.</div>
+        <div class="timeline-item">Premium landing design in progress.</div>
+        <div class="timeline-item">Core site structure (categories + guides) next.</div>
+        <div class="timeline-item">Pinterest growth system and partnerships onboarding.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Contact</h3>
+      <p>
+        Interested in early access, collaborations, or affiliate partnerships?
+        Reach out to our team.
+      </p>
+      <a class="button" href="mailto:partners@diamond2partnerscom">partners@diamond2partnerscom</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Diamond2Partners. All rights reserved.</p>
+  </footer>
+</body>
+</html>
