@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Diamond2Partners — Luxury Affiliate Access Platform</title>
+  <title>Diamond2Partners — Luxury Watch Guides & Curated Picks</title>
+
   <meta
     name="description"
-    content="Diamond2Partners (D2P LAAP) is a curated luxury affiliate access platform for high-end watches and premium goods."
+    content="Diamond2Partners is a curated luxury hub for watch buyers: guides, comparisons, and editor’s picks. We link to trusted partner retailers so you can buy with confidence."
   />
+
   <style>
     :root {
       color-scheme: light;
@@ -40,7 +42,7 @@
     }
 
     header {
-      padding: 32px 8vw 80px;
+      padding: 32px 8vw 70px;
     }
 
     .hero {
@@ -73,7 +75,7 @@
     .hero p {
       color: var(--muted);
       font-size: 18px;
-      max-width: 540px;
+      max-width: 560px;
     }
 
     .hero-actions {
@@ -89,14 +91,15 @@
       border: 1px solid transparent;
       background: var(--accent);
       color: #1a1a1a;
-      font-weight: 600;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      font-weight: 700;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
     }
 
     .button.secondary {
       background: transparent;
-      border-color: rgba(216, 179, 109, 0.5);
+      border-color: rgba(216, 179, 109, 0.55);
       color: var(--accent-strong);
+      font-weight: 650;
     }
 
     .button:hover {
@@ -127,16 +130,17 @@
       place-items: center;
       color: #1b1b1b;
       font-size: 30px;
-      font-weight: 700;
+      font-weight: 800;
     }
 
     .logo h2 {
       font-size: 26px;
+      letter-spacing: 0.2px;
     }
 
     .info-grid {
       display: grid;
-      gap: 24px;
+      gap: 22px;
       margin-top: 24px;
     }
 
@@ -168,7 +172,7 @@
 
     .section {
       max-width: 1100px;
-      margin: 0 auto 60px;
+      margin: 0 auto 56px;
     }
 
     .section h3 {
@@ -179,6 +183,7 @@
     .section p {
       color: var(--muted);
       margin-bottom: 18px;
+      max-width: 820px;
     }
 
     .pill-grid {
@@ -194,6 +199,11 @@
       border: 1px solid rgba(255, 255, 255, 0.06);
     }
 
+    .pill p {
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+
     .timeline {
       display: grid;
       gap: 16px;
@@ -206,15 +216,25 @@
       border-left: 3px solid var(--accent);
     }
 
+    .mini-note {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
     footer {
       text-align: center;
-      padding: 30px 8vw 60px;
+      padding: 28px 8vw 58px;
       color: var(--muted);
+    }
+
+    footer p {
+      margin-top: 10px;
     }
 
     @media (max-width: 720px) {
       header {
-        padding: 24px 6vw 60px;
+        padding: 24px 6vw 56px;
       }
 
       main {
@@ -228,29 +248,37 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="hero">
       <div>
-        <span class="badge">Luxury Affiliate Access</span>
-        <h1>Diamond2Partners (D2P LAAP)</h1>
+        <span class="badge">Curated Luxury Watch Guides</span>
+        <h1>Diamond2Partners</h1>
         <p>
-          Curated access to high-end watch and luxury goods affiliate opportunities, built for
-          entrepreneurs who value precision, clean design, and premium positioning.
+          Curated comparisons, buying guides, and editor’s picks for luxury watches.
+          We don’t sell watches — we help you choose and send you to trusted partner retailers to buy with confidence.
         </p>
+
         <div class="hero-actions">
-          <a class="button" href="mailto:partners@diamond2partners.com">Request access</a>
-          <a class="button secondary" href="#about">Explore the vision</a>
+          <a class="button" href="#guides">Explore guides</a>
+          <a class="button secondary" href="mailto:partners@diamond2partners.com">Partner with us</a>
         </div>
+
+        <p class="mini-note">
+          Pre-launch: the full hub experience is in development. New guides will be added continuously.
+        </p>
       </div>
+
       <div class="hero-card">
         <div class="logo">
           <div class="logo-mark">◆</div>
           <div>
             <h2>Diamond2Partners</h2>
-            <p>Luxury Affiliate Access Platform</p>
+            <p>Curated luxury hub — not a marketplace</p>
           </div>
         </div>
+
         <div class="info-grid">
           <div class="info-item">
             <div class="icon">
@@ -259,10 +287,11 @@
               </svg>
             </div>
             <div>
-              <strong>Curated luxury hub</strong>
-              <p>Not a marketplace — curated selections and access only.</p>
+              <strong>Curated picks (not a marketplace)</strong>
+              <p>We don’t sell. We curate options and link to trusted partners.</p>
             </div>
           </div>
+
           <div class="info-item">
             <div class="icon">
               <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -270,10 +299,11 @@
               </svg>
             </div>
             <div>
-              <strong>Guides + selections</strong>
-              <p>Luxury watch and high-end goods affiliate recommendations.</p>
+              <strong>Buying guides &amp; comparisons</strong>
+              <p>References, sizing, authenticity basics, and “best for…” lists.</p>
             </div>
           </div>
+
           <div class="info-item">
             <div class="icon">
               <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -281,8 +311,8 @@
               </svg>
             </div>
             <div>
-              <strong>Traffic systems</strong>
-              <p>Pinterest-first growth with conversion-focused structure.</p>
+              <strong>Trusted partner links</strong>
+              <p>When you’re ready, we send you to vetted retailers to purchase.</p>
             </div>
           </div>
         </div>
@@ -292,20 +322,21 @@
 
   <main>
     <section id="about" class="section">
-      <h3>Project overview</h3>
+      <h3>What is Diamond2Partners?</h3>
       <p>
-        Diamond2Partners is being built as a premium access platform for entrepreneurs looking
-        to connect with high-end affiliate ecosystems. We focus on clean, fast, conversion-first
-        experiences with luxury branding at the core.
+        Diamond2Partners is a curated luxury hub for watch buyers.
+        We publish practical guides and editor’s picks — from entry-luxury to high horology —
+        and link to trusted partner retailers so you can buy with clarity and confidence.
       </p>
+
       <div class="pill-grid">
         <div class="pill">
-          <strong>Positioning</strong>
-          <p>Curated access to high-end watches &amp; luxury goods.</p>
+          <strong>What you get</strong>
+          <p>Guides, comparisons, and curated lists that save time and reduce risk.</p>
         </div>
         <div class="pill">
-          <strong>What we are</strong>
-          <p>Guides, selections, and partner access.</p>
+          <strong>How it works</strong>
+          <p>Read → compare → buy from trusted partners via our links.</p>
         </div>
         <div class="pill">
           <strong>What we are not</strong>
@@ -314,30 +345,58 @@
       </div>
     </section>
 
+    <section id="guides" class="section">
+      <h3>How it works</h3>
+      <p>
+        We focus on simple, high-signal content that helps you make a decision fast — without compromising on quality.
+      </p>
+
+      <div class="pill-grid">
+        <div class="pill">
+          <strong>1) Browse guides</strong>
+          <p>Explore buying guides, comparisons, and “best of” lists.</p>
+        </div>
+        <div class="pill">
+          <strong>2) Learn what matters</strong>
+          <p>Understand references, sizing, materials, and common pitfalls.</p>
+        </div>
+        <div class="pill">
+          <strong>3) Buy from trusted partners</strong>
+          <p>We link to vetted retailers when you’re ready to purchase.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <h3>Current stage</h3>
-      <p>This is a pre-launch landing page while the platform experience is in development.</p>
+      <p>
+        This is a pre-launch landing page while the platform experience is in development.
+        The first guide collections and partner pages are coming next.
+      </p>
       <div class="timeline">
-        <div class="timeline-item">Domain setup &amp; GitHub Pages deployment complete.</div>
-        <div class="timeline-item">Premium landing design in progress.</div>
+        <div class="timeline-item">Domain setup &amp; deployment complete.</div>
+        <div class="timeline-item">Landing positioning &amp; structure aligned to curated hub model.</div>
         <div class="timeline-item">Core site structure (categories + guides) next.</div>
-        <div class="timeline-item">Pinterest growth system and partnerships onboarding.</div>
+        <div class="timeline-item">Pinterest growth system + partner onboarding.</div>
       </div>
     </section>
 
     <section class="section">
       <h3>Contact</h3>
       <p>
-        Interested in early access, collaborations, or affiliate partnerships?
-        Reach out to our team.
+        Interested in collaborations, affiliate partnerships, or being featured as a trusted retailer?
+        Email us.
       </p>
-     <a class="button" href="mailto:partners@diamond2partners.com">Contact us</a>
+      <a class="button" href="mailto:partners@diamond2partners.com">partners@diamond2partners.com</a>
+      <p class="mini-note">
+        Disclosure: We may earn a commission when you buy through our partner links — at no extra cost to you.
+      </p>
     </section>
   </main>
 
   <footer>
     <p>© 2026 Diamond2Partners. All rights reserved.</p>
-         <p class="email-note">partners@diamond2partners.com</p>
+    <p>partners@diamond2partners.com</p>
   </footer>
 </body>
 </html>
