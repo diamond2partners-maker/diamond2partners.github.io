@@ -36,14 +36,9 @@
       min-height: 100vh;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
 
-    header {
-      padding: 32px 8vw 70px;
-    }
+    header { padding: 32px 8vw 70px; }
 
     .hero {
       max-width: 1100px;
@@ -67,7 +62,7 @@
       text-transform: uppercase;
     }
 
-    /* === BRAND LINE (logo + D2P LAAP) === */
+    /* Brand line: logo + D2P LAAP on one line */
     .hero-brand {
       display: flex;
       align-items: center;
@@ -78,14 +73,15 @@
     .hero-logo {
       width: 42px;
       height: auto;
+
+      /* Blend into page tone */
       filter: brightness(0) invert(1);
       opacity: 0.85;
+
       transition: opacity 0.2s ease;
     }
 
-    .hero-logo:hover {
-      opacity: 1;
-    }
+    .hero-logo:hover { opacity: 1; }
 
     .hero-brand h1 {
       font-size: clamp(32px, 4vw, 52px);
@@ -113,13 +109,14 @@
       background: var(--accent);
       color: #1a1a1a;
       font-weight: 700;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
     }
 
     .button.secondary {
       background: transparent;
       border-color: rgba(216, 179, 109, 0.55);
       color: var(--accent-strong);
+      font-weight: 650;
     }
 
     .button:hover {
@@ -153,9 +150,7 @@
       font-weight: 800;
     }
 
-    .logo h2 {
-      font-size: 26px;
-    }
+    .logo h2 { font-size: 26px; letter-spacing: 0.2px; }
 
     .info-grid {
       display: grid;
@@ -176,6 +171,7 @@
       background: rgba(216, 179, 109, 0.15);
       display: grid;
       place-items: center;
+      flex-shrink: 0;
     }
 
     .icon svg {
@@ -184,19 +180,14 @@
       fill: var(--accent-strong);
     }
 
-    main {
-      padding: 0 8vw 90px;
-    }
+    main { padding: 0 8vw 90px; }
 
     .section {
       max-width: 1100px;
       margin: 0 auto 56px;
     }
 
-    .section h3 {
-      font-size: 26px;
-      margin-bottom: 14px;
-    }
+    .section h3 { font-size: 26px; margin-bottom: 14px; }
 
     .section p {
       color: var(--muted);
@@ -217,10 +208,9 @@
       border: 1px solid rgba(255, 255, 255, 0.06);
     }
 
-    .timeline {
-      display: grid;
-      gap: 16px;
-    }
+    .pill p { margin-top: 8px; margin-bottom: 0; }
+
+    .timeline { display: grid; gap: 16px; }
 
     .timeline-item {
       padding: 18px;
@@ -241,22 +231,13 @@
       color: var(--muted);
     }
 
-    footer p {
-      margin-top: 10px;
-    }
+    footer p { margin-top: 10px; }
 
     @media (max-width: 720px) {
-      header {
-        padding: 24px 6vw 56px;
-      }
-
-      main {
-        padding: 0 6vw 60px;
-      }
-
-      .hero-actions {
-        flex-direction: column;
-      }
+      header { padding: 24px 6vw 56px; }
+      main { padding: 0 6vw 60px; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .hero-logo { width: 38px; }
     }
   </style>
 </head>
@@ -267,9 +248,8 @@
       <div>
         <span class="badge">Curated Luxury Watch Guides</span>
 
-        <!-- BRAND LINE -->
         <div class="hero-brand">
-          <img src="/logo.png" alt="D2P LAAP logo" class="hero-logo" />
+          <img class="hero-logo" src="/logo.png" alt="D2P LAAP logo" loading="eager" />
           <h1>D2P LAAP</h1>
         </div>
 
@@ -300,37 +280,118 @@
         <div class="info-grid">
           <div class="info-item">
             <div class="icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2 3 8.5l9 13.5 9-13.5L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2 3 8.5l9 13.5 9-13.5L12 2zm0 4.3 4.9 2.7-4.9 7.1-4.9-7.1L12 6.3z" />
+              </svg>
             </div>
             <div>
-              <strong>Curated picks</strong>
-              <p>We curate options and link to trusted partners.</p>
+              <strong>Curated picks (not a marketplace)</strong>
+              <p>We don’t sell. We curate options and link to trusted partners.</p>
             </div>
           </div>
 
           <div class="info-item">
             <div class="icon">
-              <svg viewBox="0 0 24 24"><path d="M7 2h10v20l-5-3-5 3z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 2h10a2 2 0 0 1 2 2v16l-7-4-7 4V4a2 2 0 0 1 2-2z" />
+              </svg>
             </div>
             <div>
-              <strong>Buying guides</strong>
-              <p>References, sizing, authenticity basics.</p>
+              <strong>Buying guides &amp; comparisons</strong>
+              <p>References, sizing, authenticity basics, and “best for…” lists.</p>
             </div>
           </div>
 
           <div class="info-item">
             <div class="icon">
-              <svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zm10 0h6v6h-6z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 12h6V4H4v8zm0 8h6v-6H4v6zm10 0h6V12h-6v8zm0-18v6h6V2h-6z" />
+              </svg>
             </div>
             <div>
-              <strong>Trusted links</strong>
-              <p>Buy from vetted retailers.</p>
+              <strong>Trusted partner links</strong>
+              <p>When you’re ready, we send you to vetted retailers to purchase.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+
+  <!-- ✅ THIS PART WAS MISSING IN YOUR CURRENT DEPLOY -->
+  <main>
+    <section id="about" class="section">
+      <h3>What is Diamond2Partners?</h3>
+      <p>
+        Diamond2Partners is a curated luxury hub for watch buyers.
+        We publish practical guides and editor’s picks — from entry-luxury to high horology —
+        and link to trusted partner retailers so you can buy with clarity and confidence.
+      </p>
+
+      <div class="pill-grid">
+        <div class="pill">
+          <strong>What you get</strong>
+          <p>Guides, comparisons, and curated lists that save time and reduce risk.</p>
+        </div>
+        <div class="pill">
+          <strong>How it works</strong>
+          <p>Read → compare → buy from trusted partners via our links.</p>
+        </div>
+        <div class="pill">
+          <strong>What we are not</strong>
+          <p>Not a store. Not a marketplace. No mass-market noise.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section">
+      <h3>How it works</h3>
+      <p>
+        We focus on simple, high-signal content that helps you make a decision fast — without compromising on quality.
+      </p>
+
+      <div class="pill-grid">
+        <div class="pill">
+          <strong>1) Browse guides</strong>
+          <p>Explore buying guides, comparisons, and “best of” lists.</p>
+        </div>
+        <div class="pill">
+          <strong>2) Learn what matters</strong>
+          <p>Understand references, sizing, materials, and common pitfalls.</p>
+        </div>
+        <div class="pill">
+          <strong>3) Buy from trusted partners</strong>
+          <p>We link to vetted retailers when you’re ready to purchase.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Current stage</h3>
+      <p>
+        This is a pre-launch landing page while the platform experience is in development.
+        The first guide collections and partner pages are coming next.
+      </p>
+      <div class="timeline">
+        <div class="timeline-item">Domain setup &amp; deployment complete.</div>
+        <div class="timeline-item">Landing positioning &amp; structure aligned to curated hub model.</div>
+        <div class="timeline-item">Core site structure (categories + guides) next.</div>
+        <div class="timeline-item">Pinterest growth system + partner onboarding.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Contact</h3>
+      <p>
+        Interested in collaborations, affiliate partnerships, or being featured as a trusted retailer?
+        Email us.
+      </p>
+      <a class="button" href="mailto:partners@diamond2partners.com">Contact us</a>
+      <p class="mini-note">
+        Disclosure: We may earn a commission when you buy through our partner links — at no extra cost to you.
+      </p>
+    </section>
+  </main>
 
   <footer>
     <p>© 2026 Diamond2Partners. All rights reserved.</p>
